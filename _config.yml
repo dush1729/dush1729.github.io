@@ -1,6 +1,6 @@
 # Site
 title:          Dushyant Singh
-bio:            [dush1729]
+bio:            '[dush1729]'
 description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
 picture:        'assets/img/profile.png'
 locale:         en_US
