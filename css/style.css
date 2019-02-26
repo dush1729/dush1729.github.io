@@ -2,11 +2,10 @@ body,html {
 	padding: 0;
 	margin: 0;
 }
-#jumbo{
-	/* https://uigradients.com/#Meridian */
-	background: #283c86;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#jumbo{background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .jumbotron{
 	align-items: center;
@@ -20,7 +19,7 @@ body,html {
 .name{
 	font-family: 'Dosis', sans-serif;
 	font-size: 96px;
-	color: white;
+	color: #FF6347;
 	font-weight: 400;
 	margin-bottom: 10px;
 	text-align: center;
@@ -29,7 +28,7 @@ body,html {
 	font-family: 'Dosis', sans-serif;
 	font-weight: 200;
 	font-size: 64px;
-	color: white;
+	color: #39FF14;
 	margin-bottom: 50px;
 	text-align: center;
 }
