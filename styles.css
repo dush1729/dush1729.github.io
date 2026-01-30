@@ -531,29 +531,38 @@ body {
 }
 
 .company-logo {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.5rem;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .company-logo.google {
-    background: linear-gradient(135deg, var(--google-blue), var(--google-green));
-    color: white;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
 }
 
 .company-logo.byjus {
-    background: linear-gradient(135deg, #7c3aed, #a855f7);
-    color: white;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.company-logo.google img,
+.company-logo.byjus img,
+.company-logo.amazon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .company-logo.amazon {
-    background: linear-gradient(135deg, #ff9900, #ffb84d);
-    color: #232f3e;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
 }
 
 .exp-info h3 {
