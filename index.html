@@ -1,79 +1,494 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Dushyant Singh</title>
-	<meta name="author" content="Dushyant Singh" />
-	<meta name="theme-color" content="#1e2327" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/accepted.png">
-
-	<script type="text/javascript" src="js/loadCSS.js"></script>
-	<script>
-		loadCSS("https://fonts.googleapis.com/css?family=Dosis:200,400");
-		loadCSS("https://fonts.googleapis.com/css?family=Raleway");
-		loadCSS("css/style.css"); 000
-	</script>
-
-	<script type="text/javascript" src="js/script.js"></script>
-	<!--[if lt IE 9]>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-		<![endif]-->
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144934197-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-144934197-2');
-	</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dushyant Singh | Android Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<div class="jumbotron" id="jumbo">
-		<div class="name">Dushyant Singh</div>
-		<div class="handle">(@dush1729)</div>
-		<nav>
-			<ul class="navbar">
-				<li class="navbar-item">
-					<a class="navbar-block resume"
-						href="https://drive.google.com/file/d/1OSHHPzb-bmfj829qTSdmwviEPUYrzzvN/view?usp=sharing">RÉSUMÉ</a>
-				</li>
-			</ul>
-		</nav>
-		<nav>
-			<ul class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="android-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/>
+                </svg>
+            </span>
+            dush1729
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://codeforces.com/profile/dush1729">CODEFORCES</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://www.topcoder.com/members/dush1729">TOPCODER</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://www.codechef.com/users/dushsingh1995">CODECHEF</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://www.hackerrank.com/dush1729">HACKERRANK</a>
-				</li>
+    <!-- Hero Section with Phone Mockup -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello World!</p>
+                <h1>I'm <span class="highlight">Dushyant Singh</span></h1>
+                <h2>Android Developer</h2>
+                <p class="tagline">Building scalable, user-centric mobile experiences for millions of users</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100M+</span>
+                        <span class="stat-label">Users Impacted</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Lines of Code</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="Dushyant_Singh.pdf" class="btn btn-secondary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-phone">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <span class="app-title">Portfolio.apk</span>
+                            <span class="app-version">v1.0.0</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="profile-card">
+                                <div class="profile-avatar">dush1729</div>
+                                <div class="profile-info">
+                                    <span class="profile-name">Dushyant Singh</span>
+                                    <span class="profile-role">Software Engineer</span>
+                                </div>
+                            </div>
+                            <div class="app-menu">
+                                <div class="menu-item active">
+                                    <span class="menu-icon">&#128187;</span>
+                                    <span>Experience</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span class="menu-icon">&#128736;</span>
+                                    <span>Skills</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span class="menu-icon">&#127942;</span>
+                                    <span>Awards</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-navbar">
+                            <span>&#8592;</span>
+                            <span>&#9679;</span>
+                            <span>&#9632;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://www.hackerearth.com/@dush1729">HACKEREARTH</a>
-				</li>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#128100;</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <p>Software Engineer with <strong>6+ years of experience</strong> in Android app development, specializing in building scalable and user-centric applications. I have a proven ability to improve user engagement, optimize performance, and implement robust features for <strong>millions of daily active users</strong>.</p>
+                    <p>Currently based in India, I've had the opportunity to work with leading tech companies including <strong>Google</strong>, <strong>BYJU's</strong>, and <strong>Amazon</strong>, contributing to products that impact millions of users worldwide.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#127919;</span>
+                            <span>Modern Android Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#128202;</span>
+                            <span>Performance Optimization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">&#9855;</span>
+                            <span>Accessibility Champion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<li class="navbar-item">
-					<a class="navbar-block" href="https://github.com/dush1729">GITHUB</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#128188;</span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <!-- Google Bengaluru -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <div class="company-logo google">G</div>
+                                <div class="exp-info">
+                                    <h3>Google</h3>
+                                    <p class="exp-role">Software Engineer</p>
+                                    <p class="exp-meta">March 2023 - June 2025 | Bengaluru, India</p>
+                                </div>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Developed features for <strong>100M MAU</strong> Where is My Train Android app in agile sprints</li>
+                                <li>Integrated Google Maps SDK achieving <strong>16% click-through rate</strong></li>
+                                <li>Implemented deep links yielding <strong>200k daily shares</strong> and <strong>50k app launches</strong></li>
+                                <li>Built GPS tracking solution using <strong>MVVM + Jetpack Compose</strong></li>
+                                <li>Designed city-themed UI for <strong>250k daily active local users</strong></li>
+                                <li>Achieved <strong>100% app accessibility</strong> compliance with TalkBack support</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">MVVM</span>
+                                <span class="tag">Google Maps SDK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Google Taipei -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <div class="company-logo google">G</div>
+                                <div class="exp-info">
+                                    <h3>Google</h3>
+                                    <p class="exp-role">Software Engineer</p>
+                                    <p class="exp-meta">December 2021 - March 2023 | Taipei, Taiwan</p>
+                                </div>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Developed automated tests using Mobly for <strong>Pixel modem functionalities</strong> including 4G, 5G, SMS, and Voice over Wi-Fi</li>
+                                <li>Improved <strong>VoLTE call quality</strong> through comprehensive stress tests for AT&T, Verizon, and T-Mobile carriers</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span class="tag">Mobly</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">5G/4G</span>
+                                <span class="tag">VoLTE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BYJU's -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <div class="company-logo byjus">B</div>
+                                <div class="exp-info">
+                                    <h3>BYJU's</h3>
+                                    <p class="exp-role">Senior Software Engineer</p>
+                                    <p class="exp-meta">October 2018 - October 2021 | Bengaluru, Karnataka</p>
+                                </div>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Developed Android applications used for learning by <strong>millions of students</strong> across India</li>
+                                <li><strong>Led GraphQL implementation</strong> for BYJU's android application</li>
+                                <li>Contributed <strong>50K+ lines of code</strong> to established codebase</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">GraphQL</span>
+                                <span class="tag">RxJava</span>
+                                <span class="tag">MVP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazon -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <div class="company-logo amazon">a</div>
+                                <div class="exp-info">
+                                    <h3>Amazon</h3>
+                                    <p class="exp-role">Software Development Engineer Intern</p>
+                                    <p class="exp-meta">February 2018 - July 2018 | Hyderabad, Telangana</p>
+                                </div>
+                            </div>
+                            <ul class="exp-details">
+                                <li>Migrated APIs for team services to new database engine compatibility</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#128736;</span>
+                Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">&#128241;</span>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="chip primary">Kotlin</span>
+                        <span class="chip primary">Java</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">&#128640;</span>
+                        <h3>Android</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="chip primary">Jetpack Compose</span>
+                        <span class="chip primary">XML</span>
+                        <span class="chip">Room</span>
+                        <span class="chip">Retrofit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">&#128736;</span>
+                        <h3>Architecture</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="chip primary">MVVM</span>
+                        <span class="chip primary">MVP</span>
+                        <span class="chip">Clean Architecture</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">&#9881;</span>
+                        <h3>Libraries</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="chip">Flow & Coroutines</span>
+                        <span class="chip">RxJava</span>
+                        <span class="chip">Dagger</span>
+                        <span class="chip">JUnit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">&#127760;</span>
+                        <h3>Other</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="chip">GraphQL</span>
+                        <span class="chip">NodeJS</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#127942;</span>
+                Achievements & Awards
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">&#127941;</div>
+                    <h3>Topcoder Humblefool Cup 2018</h3>
+                    <p>Runner up in Topcoder IIITA Algorithm Round</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">&#128218;</div>
+                    <h3>CodeChef CCDSAP</h3>
+                    <p>Cleared Advanced Level of Data Structure and Algorithms Programme</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">&#127944;</div>
+                    <h3>ACM ICPC Finalist</h3>
+                    <p>Represented Manipal University Jaipur at regionals in 2016 & 2017</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">&#127775;</div>
+                    <h3>TCS Codevita 2017</h3>
+                    <p>College Rank 1st, All India Rank 25th</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">&#128187;</div>
+                    <h3>CSI Programming Contest</h3>
+                    <p>Top 60 in 4th National CSI Discover Thinking Contest 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#127891;</span>
+                Education
+            </h2>
+            <div class="education-card">
+                <div class="edu-icon">&#127979;</div>
+                <div class="edu-info">
+                    <h3>Bachelor of Technology (Computer Science Engineering)</h3>
+                    <p class="edu-school">Manipal University Jaipur</p>
+                    <p class="edu-meta">2014 - 2018 | Jaipur, Rajasthan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">&#128231;</span>
+                Get In Touch
+            </h2>
+            <p class="contact-intro">I'm always open to discussing new opportunities, interesting projects, or just having a chat about Android development!</p>
+            <div class="contact-grid">
+                <a href="mailto:dush1729@gmail.com" class="contact-card">
+                    <div class="contact-icon">&#128231;</div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">dush1729@gmail.com</span>
+                </a>
+                <a href="tel:+919701427755" class="contact-card">
+                    <div class="contact-icon">&#128222;</div>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91 97014 27755</span>
+                </a>
+                <a href="https://linkedin.com/in/dush1729" target="_blank" class="contact-card">
+                    <div class="contact-icon">&#128101;</div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/dush1729</span>
+                </a>
+                <a href="https://github.com/dush1729" target="_blank" class="contact-card">
+                    <div class="contact-icon">&#128187;</div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/dush1729</span>
+                </a>
+                <a href="https://stackoverflow.com/users/5258585" target="_blank" class="contact-card">
+                    <div class="contact-icon">&#128161;</div>
+                    <span class="contact-label">Stack Overflow</span>
+                    <span class="contact-value">stackoverflow.com/u/5258585</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with passion for Android development</p>
+            <p class="footer-copy">&copy; 2025 Dushyant Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navLinks.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item, .skill-category, .achievement-card, .contact-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
-
 </html>
